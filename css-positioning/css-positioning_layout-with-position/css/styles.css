@@ -95,6 +95,7 @@ body {
  */
 .goto-top {
   position: sticky;
+  bottom: 10%;
   text-decoration: none;
   color: #f9f9f9;
   padding: 12px 24px;
