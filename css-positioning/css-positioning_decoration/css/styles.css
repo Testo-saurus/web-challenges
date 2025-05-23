@@ -63,6 +63,6 @@ Hint: The z-index can also be negative!
   );
   border-radius: 50%;
   rotate: 280deg;
-  bottom: -80px; /* Position from the bottom of the hero card */
+  bottom: -81px; /* Position from the bottom of the hero card */
   right: -50px; /* Position from the right edge of the hero card */
 }
