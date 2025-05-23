@@ -19,15 +19,25 @@ h2 {
   color: #3f0097;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
 .profile__image {
+  align-self: center;
   object-fit: cover;
-  border-radius: 999px;
+  border-radius: 50%;
   aspect-ratio: 1 / 1;
   border: solid #3f0097 1px;
-  max-width: 50%;
+  width: 200px; /* Fixed width instead of max-width */
+  height: 200px; /* Fixed height to match width */
 }
 
 .tech-stack__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
   padding-left: 0;
 }
@@ -38,3 +48,5 @@ h2 {
   color: #ffffff;
   border-radius: 10px;
 }
+
+/*  */
