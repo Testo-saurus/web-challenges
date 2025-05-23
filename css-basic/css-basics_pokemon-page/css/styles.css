@@ -6,10 +6,14 @@
 
 /* Your solution */
 
+* {
+  box-sizing: border-box;
+}
+
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements in your code via inheritance. Which selector do we need for this? */
 
 /* Add selector */
- {
+body {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -18,9 +22,20 @@
 
 /* ------- Headings Part 1 ------- */
 
-/* Task 3: Setting the line height to 1.5 is good for texts, for accessibility reasons, but it seems too much for headings. Let's change this by giving our headings a line height of 1.2. */
+/* Task 3: Setting the line height to 1.5 is good for texts, 
+for accessibility reasons, but it seems too much for headings. 
+Let's change this by giving our headings a line height of 1.2. */
 
 /* Your solution */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
 
 /* Task 4: Now we want to give our h1 element more styles to shine! Add the following styles by writing the correct declarations inside the next CSS rule:
 
@@ -31,12 +46,16 @@
 */
 
 .title {
-  /* Your solution */
+  background-color: white;
+  margin-top: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------- Sections ------- */
 
-/* Task 5: Our page consists of two sections containing information about why Pokémon are cool and what the favorite Pokémon are. Let's style these sections:
+/* Task 5: Our page consists of two sections containing information about why 
+Pokémon are cool and what the favorite Pokémon are. Let's style these sections:
 
 - Set a white background for our sections
 - Add padding of 20px and margin of 10px
@@ -45,36 +64,49 @@
 */
 
 section {
-  /* Your solution */
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-left: orange solid 5px;
+  border-radius: 3px;
 }
 
 /* ------- Headings Part 2 ------- */
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
 
-- Add a border to the left and the right of the title only. The border should be 3px solid with the color "gold".
+- Add a border to the left and the right of the title only. 
+The border should be 3px solid with the color "gold".
 - There should be some space between the text and the border.
-- The right border should end with the last character of the title. Hint: If you don't know how to do this, think about the display property.
+- The right border should end with the last character of the title. 
+Hint: If you don't know how to do this, think about the display property.
 - Bonus: The border color of the "Favorite Pokémon" title should be "orange". Hint: You may need another CSS rule.
 */
 
 .subtitle {
-  /* Your solution */
+  border-left: solid 3px gold;
+  border-right: solid 3px gold;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+/* Bonus: Change border color for the "Favorite Pokémon" title */
+.favourites ul li:nth-of-type(4) {
+  border: orange solid 1px;
 }
 
 /* ------- List ------- */
 
-/* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
+/* Task 7: Finally, let's style our list with of favorite Pokémon. 
+Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
- {
+.favourites ul {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
 }
 
-/* Add selector */
- {
-  padding-left: /* Add value */ ;
+.favourites ul li {
+  padding-left: 10px;
 }
 
 /* ------- The End -------- */
