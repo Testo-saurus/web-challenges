@@ -238,17 +238,7 @@ body {
 /* Now it's your turn! Use media queries to partially overwrite our
 CSS based on conditions such as viewport width, etc. */
 
-/* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
-
-/* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
-
-/* tablet view +900px --> i want 2 colums here */
+/* Media Query tablet view +900px --> i want 2 colums here */
 
 @media screen and (min-width: 900px) {
   .card-section {
@@ -259,30 +249,30 @@ CSS based on conditions such as viewport width, etc. */
   }
 
   .intro-text {
-    width: 45%; /* Make the intro text take full width in its own row */
+    width: 45%; /* trial and error*/
     margin-bottom: var(--gap);
     text-align: left;
     align-self: flex-start;
   }
 
   .product-card {
-    width: 45%;
+    width: 45%; /* trial and error*/
     margin: 0; /* Reset any margin that might interfere */
   }
 }
 
-/* Desktop view +1200px */
+/* Media Querie Desktop view +1200px */
 
 @media screen and (min-width: 1200px) {
   .card-section {
     flex-direction: row;
-    justify-content: center; /* Changed from flex-start to center */
+    justify-content: center;
     flex-wrap: wrap;
-    padding: var(--gap); /* Add padding to container */
+    padding: var(--gap);
   }
 
   .intro-text {
-    width: 45%; /* Make the intro text take full width in its own row */
+    width: 45%; /* trial and error*/
     margin-bottom: var(--gap);
     text-align: left;
     align-self: flex-start;
@@ -290,7 +280,7 @@ CSS based on conditions such as viewport width, etc. */
 
   /* Target the first product card */
   .product-card:first-of-type {
-    width: 94%;
+    width: 94%; /* trial and error */
     margin-right: var(--gap);
   }
 }
