@@ -1,0 +1,13 @@
+:root {
+  --body-bg: #fddcd2;
+
+  --header-bg: black;
+  --header-text: hotpink;
+
+  --main-bg: beige;
+  --main-text: black;
+  --main-title-bg: hotpink;
+
+  --card-bg: lightgrey;
+  --card-text: #201e1d;
+}
