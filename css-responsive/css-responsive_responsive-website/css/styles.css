@@ -238,7 +238,7 @@ body {
 /* Now it's your turn! Use media queries to partially overwrite our
 CSS based on conditions such as viewport width, etc. */
 
-/* Media Query tablet view +900px --> i want 2 colums here */
+/* Media Query tablet view +900px --> i wdfdfdant 2 colums here */
 
 @media screen and (min-width: 900px) {
   .card-section {
