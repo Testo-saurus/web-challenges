@@ -163,53 +163,6 @@ body {
   box-shadow: 0px 0px 10px 0px var(--inky-black);
 }
 
-/* tablet view +900px --> i want 2 colums here */
-
-@media screen and (min-width: 900px) {
-  .card-section {
-    flex-direction: row;
-    justify-content: center; /* Changed from flex-start to center */
-    flex-wrap: wrap;
-    padding: var(--gap); /* Add padding to container */
-  }
-
-  .intro-text {
-    width: 45%; /* Make the intro text take full width in its own row */
-    margin-bottom: var(--gap);
-    text-align: left;
-    align-self: flex-start;
-  }
-
-  .product-card {
-    width: 45%;
-    margin: 0; /* Reset any margin that might interfere */
-  }
-}
-
-/* Desktop view +1200px */
-
-@media screen and (min-width: 1200px) {
-  .card-section {
-    flex-direction: row;
-    justify-content: center; /* Changed from flex-start to center */
-    flex-wrap: wrap;
-    padding: var(--gap); /* Add padding to container */
-  }
-
-  .intro-text {
-    width: 45%; /* Make the intro text take full width in its own row */
-    margin-bottom: var(--gap);
-    text-align: left;
-    align-self: flex-start;
-  }
-
-  /* Target the first product card */
-  .product-card:first-of-type {
-    width: 94%;
-    margin-right: var(--gap);
-  }
-}
-
 .--forest {
   background-image: url("../img/forest.jpg");
   background-size: cover;
@@ -285,12 +238,49 @@ body {
 /* Now it's your turn! Use media queries to partially overwrite our
 CSS based on conditions such as viewport width, etc. */
 
-/* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+/* Media Query tablet view +900px --> i wdfdfdant 2 colums here */
 
-/* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media screen and (min-width: 900px) {
+  .card-section {
+    flex-direction: row;
+    justify-content: center; /* Changed from flex-start to center */
+    flex-wrap: wrap;
+    padding: var(--gap); /* Add padding to container */
+  }
+
+  .intro-text {
+    width: 45%; /* trial and error*/
+    margin-bottom: var(--gap);
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .product-card {
+    width: 45%; /* trial and error*/
+    margin: 0; /* Reset any margin that might interfere */
+  }
+}
+
+/* Media Querie Desktop view +1200px */
+
+@media screen and (min-width: 1200px) {
+  .card-section {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: var(--gap);
+  }
+
+  .intro-text {
+    width: 45%; /* trial and error*/
+    margin-bottom: var(--gap);
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  /* Target the first product card */
+  .product-card:first-of-type {
+    width: 94%; /* trial and error */
+    margin-right: var(--gap);
+  }
+}
