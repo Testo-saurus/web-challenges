@@ -1,8 +1,8 @@
-# JS Basics and Variables: Tip Calculator
+# JS Basics and Variables: Track Your Savings Goals
 
 ## Tasks
 
-In this challenge, you’ll create a program that calculates the total cost of a meal, including the tip.
+In this challenge, you’ll create a program that calculates your total savings over a specified time period based on your initial balance and monthly contributions.
 
 Please switch to the `index.js` file to begin the exercise, where you’ll find all instructions.
 
