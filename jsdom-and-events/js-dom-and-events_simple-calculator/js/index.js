@@ -146,4 +146,4 @@ multiplyByTwoButton.addEventListener("click", () => {
   console.log(`multiplyByTwoButton clicked - Result ${operand1}`);
 });
 
-// --^-- write your code here --^--
+// --^-- write yodfdur code here --^--
