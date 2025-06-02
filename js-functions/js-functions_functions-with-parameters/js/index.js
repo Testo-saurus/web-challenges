@@ -1,6 +1,6 @@
 console.clear();
 
-logSeparator();
+console.log("-------------");
 console.log("Exercise 1:");
 /*
 1: The function below is not executed. Can you figure out why? Find the bug and fix it.
@@ -12,10 +12,9 @@ console.log("Exercise 1:");
 function logText() {
   console.log("This text does not appear. Why?");
 }
+logText();
 
-logText(); //
-
-logSeparator();
+console.log("-------------");
 console.log("Exercise 2:");
 /*
 2: Look at the functions below. They are almost identical. Can you find a way to generalize them into a new function with an input parameter? 
@@ -39,21 +38,16 @@ greetBob();
 greetMary();
 
 // --v-- write your code here --v--
-
 function greet(name) {
   console.log(`Welcome ${name}, good to see you again!`);
+
+  console.log("Welcome, " + name + " good to see you again!");
 }
 greet("jannik");
 
-// alternative iife
-(function greet(name) {
-  console.log(`Welcome ${name}, good to see you again!`);
-})("jannik");
-
 // --^-- write your code here --^--
 
-logSeparator();
-
+console.log("-------------");
 console.log("Exercise 3:");
 /*
 3: We log a small separation text for each subtask. This is repetitive code, so let’s write a function `logSeparator` that takes the number of the exercise as an input parameter and logs the corresponding separator.
@@ -63,8 +57,5 @@ Note: Separation text refers to the text that is logged in the console before ea
 */
 
 // --v-- write your code here --v--
-function logSeparator() {
-  console.log("-------------");
-}
 
 // --^-- write your code here --^--
