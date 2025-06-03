@@ -6,6 +6,14 @@ const copyButton = document.querySelector("[data-js=copy-button]");
 
 // --v-- Write your code here --v--
 
+firstCopyInput.addEventListener("input", () => {
+  console.log(firstCopyInput.value);
+});
+
+copyButton.addEventListener("click", () => {
+  secondCopyInput.value = firstCopyInput.value;
+});
+
 // --^-- End of Task 1 --^--
 
 // Task 2: Copy and Uppercase
@@ -22,6 +30,15 @@ const copyInUppercaseButton = document.querySelector(
 
 // --v-- Write your code here --v--
 
+copyInUppercaseButton.addEventListener(
+  "click",
+
+  () => {
+    secondCopyInUppercaseInput.value =
+      firstCopyInUppercaseInput.value.toUpperCase();
+  }
+);
+
 // --^-- End of Task 2 --^--
 
 // Task 3: Switch Values
@@ -37,5 +54,17 @@ const switchValueButton = document.querySelector(
 );
 
 // --v-- Write your code here --v--
+
+switchValueButton.addEventListener(
+  "click",
+
+  () => {
+    const firstValue = firstSwitchValueInput.value;
+    const secondValue = secondSwitchValueInput.value;
+
+    firstSwitchValueInput.value = secondValue;
+    secondSwitchValueInput.value = firstValue;
+  }
+);
 
 // --^-- End of Task 3 --^--
