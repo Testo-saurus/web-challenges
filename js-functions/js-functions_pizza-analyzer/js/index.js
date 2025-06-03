@@ -13,6 +13,8 @@ pizzaInput1.addEventListener("input", () => {
   const pizzaSize2 = Number(pizzaInput2.value);
 
   output.textContent = Math.round(calculatePizzaGain(pizzaSize1, pizzaSize2));
+
+  updatePizzaDisplay(pizza1, pizzaSize1);
 });
 
 console.log(pizzaInput1);
@@ -22,6 +24,8 @@ pizzaInput2.addEventListener("input", () => {
   const pizzaSize2 = Number(pizzaInput2.value);
 
   output.textContent = Math.round(calculatePizzaGain(pizzaSize1, pizzaSize2));
+
+  updatePizzaDisplay(pizza2, pizzaSize2);
 
   // Write your code here
 });
@@ -43,10 +47,16 @@ function calculatePizzaGain(diameter1, diameter2) {
   }
 }
 
-console.log(calculatePizzaGain(14, 12));
-
 // output.textContent = Math.round(calculatePizzaGain(14, 12));
 
 // Task 2: Define the function `updatePizzaDisplay` here
+
+function updatePizzaDisplay(pizzaElement, newSize) {
+  resultingDisplaySize = (newSize / 24) * 100 + "px";
+
+  pizzaElement.style.width = resultingDisplaySize;
+}
+
+console.log("test");
 
 // Task 3: Define the function `updateOutputColor` here
