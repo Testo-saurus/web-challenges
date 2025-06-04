@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   //create form data object
   const formData = new FormData(form);
 
-  console.log(formData);
+  console.log(formData); //--> kein reg object
 
   // convert formData to a regular object
 
@@ -23,4 +23,8 @@ form.addEventListener("submit", (e) => {
   const ageBadnessString = `The age-badness-sum of ${form.firstName.value} is ${ageBadnessSum}`;
 
   console.log(ageBadnessString);
+
+  e.target.reset();
+
+  e.target.firstName.focus();
 });
