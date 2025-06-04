@@ -17,6 +17,8 @@ newPost.classList.add("post"); // alterniative --> newPost.className = "post"; -
 document.body.append(newPost);
 
 const newP = document.createElement("p");
+newP.classList.add("post__content"); // Add this line
+
 newP.innerText = "New Post!!! sakdjfa lsdkfalskdjf laskdjfalsdkfjsldkfja!!!";
 newPost.append(newP);
 
