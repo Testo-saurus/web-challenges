@@ -30,7 +30,7 @@ const lowerCaseAnswers = cards.map((card) => {
 console.log(lowerCaseAnswers);
 
 const questionsAndAnswersTogether = cards.map((card) => {
-  return card.question + card.answer;
+  return card.question + " - " + card.answer;
 });
 console.log(questionsAndAnswersTogether);
 
