@@ -1,5 +1,3 @@
-import { getRandomColor } from "./utils/randomColor.js";
-
 import { Circle } from "./components/Circle/Circle.js";
 
 import { Square } from "./components/Square/Square.js";
@@ -16,4 +14,4 @@ const square = Square();
 
 const pentagon = Pentagon();
 
-root.append(circle, square, pentagon);
+root.append(circle, square, pentagon, circle);
