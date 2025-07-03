@@ -16,6 +16,16 @@ export default function App({ Component, pageProps }) {
 
   const [lightsArr, setLight] = useState(initalLightArr);
 
+  const noTurnedOnLights = lightsArr.map((light) => {
+    return light.isOn === true && 1;
+  });
+
+  const sumTurnedOnLights = noTurnedOnLights.reduce((a, b) => a + b);
+
+  console.log(sumTurnedOnLights);
+
+  console.log(noTurnedOnLights);
+
   function handleToggle(name) {
     setLight(
       lightsArr.map((light) => {
@@ -24,10 +34,37 @@ export default function App({ Component, pageProps }) {
     );
   }
 
+  const [isDimmed, setIsDimmed] = useState(false);
+
+  function handleAllTurnOff() {
+    setLight(
+      lightsArr.map((light) => {
+        return { ...light, isOn: false };
+      })
+    );
+    setIsDimmed(!isDimmed);
+  }
+
+  function handleAllTurnOn() {
+    setLight(
+      lightsArr.map((light) => {
+        return { ...light, isOn: true };
+      })
+    );
+    setIsDimmed(!isDimmed);
+  }
+
   return (
-    <Layout>
+    <Layout isDimmed={isDimmed}>
       <GlobalStyle />
-      <Component {...pageProps} onToggle={handleToggle} lightsArr={lightsArr} />
+      <Component
+        {...pageProps}
+        onToggle={handleToggle}
+        lightsArr={lightsArr}
+        sumTurnedOnLights={sumTurnedOnLights}
+        onAllTurnOn={handleAllTurnOn}
+        onAllTurnOff={handleAllTurnOff}
+      />
     </Layout>
   );
 }
